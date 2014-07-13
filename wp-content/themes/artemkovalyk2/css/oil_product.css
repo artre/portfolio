@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* CSS Document */
+.dont_float {
+	float:left;
+	width:100%;
+	display:block;
+	clear:right;
+	margin: 0 0 50px 0;
+}
+.button_a {
+   background-color:#09C;
+   border-radius:6px;	
+   padding:5px 15px 5px 15px;
+   color: #FFF;
+}
+/* Oil Products Page
+========================================================================== */
+
+.painting_box {
+    position:relative;
+	margin:0 auto;
+	padding: 20px 0 0 0;
+	width:700px; 
+}
+.painting_box img {
+	position:relative;
+	max-width: 100%;
+	max-height: 600px;
+	display: block;
+	margin: 0 auto;
+}
+.painting_box h1 {
+	color: #666;
+	text-align: center;
+	margin: 0 0 20px 0;
+	font-size:30px;
+}
+
+.painting_box ul {
+	position:relative;
+	margin:0 auto;
+	margin-top: 30px;
+	width:250px;
+	outline: solid 5px #FFFFFF;
+}
+.painting_box ul li {
+	color: #555;
+	padding:5px;
+	font-weight:bold;
+}
+.painting_box p {
+	color: #555;
+	margin: 20px 0 0 50px;
+	font-weight:bold;
+	font-size:14px;
+}
+.painting_box ul li:nth-child(odd) {
+	background-color:#E3E3E3;
+}
+.painting_box ul li:nth-child(even) {
+	background-color:#FFF;
+}
+.painting_box ul li:last-child {
+	margin-top: 10px;
+}

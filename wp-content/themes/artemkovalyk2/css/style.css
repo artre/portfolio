@@ -1,0 +1,4 @@
+* { margin: 0; padding: 0; }
+body { font: 14px/1.4 Georgia, serif; }
+
+article, aside, figure, footer, header, nav, section { display: block; }

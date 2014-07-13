@@ -1,0 +1,11 @@
+#custom-image-rotator {
+  max-width: 280px;
+  height: 280px;
+  margin: 60px auto;
+}
+#custom-image-rotator img {
+  max-width: 280px;
+  max-height: 280px;
+  display: block;
+  margin: 0 auto;
+}

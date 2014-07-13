@@ -1,0 +1,1517 @@
+@import url(css/sandbox.css);
+/*   
+Theme Name: Artems2 Portfolio Theme
+Theme URI: http://digwp.com
+Description: This is a theme for Artem Kovalyk Portfolio
+Author: Artem Kovalyk
+Author URI: 
+Version: 1
+*/
+/* 1. Variables
+============================================================*/
+/* 1. Resets
+============================================================*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+}
+/* 2. Defaults
+============================================================*/
+body {
+  position: relative;
+  /* IE6 positioning fix */
+  font: 13px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  background: #D2E1D4;
+  color: #CCC;
+  margin: 0;
+}
+table {
+  font-size: inherit;
+  font: 100%;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:active {
+  color: #666;
+  text-decoration: none;
+}
+a:link {
+  color: #666;
+  text-decoration: none;
+}
+a:visited {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  color: #285982;
+  text-decoration: none;
+}
+a:focus {
+  color: #666;
+  text-decoration: none;
+}
+a img {
+  color: #666;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: normal;
+}
+h1 {
+  font-size: 200%;
+  letter-spacing: -0.05em;
+}
+h2 {
+  font-size: 150%;
+  letter-spacing: -0.02em;
+}
+h3 {
+  font-size: 125%;
+}
+h4 {
+  font-size: 116%;
+}
+h5 {
+  font-size: 106%;
+}
+h6 {
+  font-size: 96%;
+}
+p {
+  line-height: 1.22em;
+}
+img {
+  vertical-align: middle;
+}
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: bold;
+}
+video:focus,
+video:active {
+  outline: 0;
+}
+object:focus,
+object:active {
+  outline: 0;
+}
+.clear_fix_pic {
+  clear: both;
+  width: 100%;
+}
+.empty {
+  position: relative;
+  height: 40px;
+}
+/* Main Page
+====================================================================== */
+#container {
+  position: relative;
+  width: 100%;
+  background-color: #FFF;
+}
+/* Header
+====================================================================== */
+#header {
+  position: relative;
+  height: 37px;
+  background-color: #FFCE48;
+  box-shadow: 0px 2px 10px #C3C3C3;
+  z-index: 2;
+}
+#main-menu {
+  position: relative;
+  top: 7px;
+  width: 180px;
+  margin: 0 auto;
+  background-color: #ffce48;
+  z-index: 5;
+}
+#my-name {
+  position: absolute;
+  width: 180px;
+  background-color: #ffce48;
+}
+#my-name h1 {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #666;
+  font-weight: 700;
+  padding-top: 1px;
+}
+.header_artem_nav ul {
+  display: block;
+  margin: 0 auto;
+  padding-top: 1px;
+}
+#home-link {
+  position: absolute;
+  width: 180px;
+  background-color: #ffce48;
+}
+#home-link a {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #666;
+  font-weight: 700;
+  padding: 0 15px 0 15px;
+  display: block;
+}
+.menu {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #666;
+  padding: 0;
+  font-weight: 700;
+  display: inline;
+}
+#header-line {
+  position: absolute;
+  left: 0px;
+  top: 18px;
+  width: 100%;
+  background-color: #C0C0C0;
+  height: 1px;
+  z-index: 5;
+}
+.about {
+  cursor: pointer;
+  cursor: hand;
+}
+.work {
+  cursor: pointer;
+  cursor: hand;
+}
+.work a {
+  text-decoration: none
+	color:#666;
+}
+/* Center
+====================================================================== */
+.center {
+  width: 100%;
+  height: 400px;
+  background-image: url(images/Background/mountains.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+.main_message {
+  margin: 85px auto 0;
+  width: 600px;
+  padding-top: 25px;
+  margin-bottom: 25px;
+  z-index: 2;
+}
+.main_message h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 27px;
+  color: #999999;
+  font-style: italic;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 140%;
+  z-index: 2;
+}
+.main_message p {
+  font-family: "Franklin Gothic Book";
+  font-size: 29px;
+  color: #666;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  z-index: 2;
+  padding: 0;
+  margin: 25px 0 0 0;
+}
+/* Bottom Yellow
+===================================================================== */
+.bottomYellow {
+  position: relative;
+  height: 350px;
+  background-color: #ffce48;
+  background-repeat: repeat;
+  z-index: 2;
+}
+/* Bottom Yellow Oil
+===================================================================== */
+.main_message_oil {
+  position: relative;
+  top: 105px;
+  margin: 0 auto;
+  width: 600px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  z-index: 2;
+}
+.main_message_oil h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 27px;
+  color: #999999;
+  font-style: italic;
+  text-align: center;
+  padding: 0;
+  line-height: 10px;
+  z-index: 2;
+}
+.main_message_oil p {
+  font-family: "Franklin Gothic Book";
+  font-size: 29px;
+  color: #666;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  z-index: 2;
+  padding: 0;
+}
+.bottomYellow_oil {
+  position: relative;
+  height: 37px;
+  background-color: #666;
+  /*rgb(255, 206, 72);*/
+  background-repeat: repeat;
+  cursor: pointer;
+  cursor: hand;
+  z-index: 2;
+}
+.1 {
+  positiowork_aboutn: relative;
+  top: 6px;
+  width: 135px;
+  margin: 0 auto;
+  background-color: #ffce48;
+  z-index: 5;
+}
+.painting {
+  position: absolute;
+  width: 135px;
+  background-color: #666;
+  margin: 0 auto;
+}
+.menu1 {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 16px;
+  color: #E7E7E7;
+  padding: 0;
+}
+.rhomb_oil {
+  position: absolute;
+  top: -5px;
+  height: 190px;
+  width: 164px;
+  cursor: pointer;
+  cursor: hand;
+  z-index: 4;
+}
+.rhomb_oil img {
+  height: 190px;
+  width: 164px;
+}
+.cube_2oil {
+  position: relative;
+  top: -100px;
+  width: 164px;
+  height: 190px;
+  margin: 0 auto;
+  display: block;
+  z-index: 5;
+}
+/* Cubes
+======================================================== */
+.rhomb {
+  position: absolute;
+  top: -10px;
+  left: 2px;
+  z-index: 4;
+}
+.rhomb img {
+  width: 190px;
+}
+.cube_1 {
+  position: absolute;
+  top: -100px;
+  display: block;
+  z-index: 5;
+}
+.cube_2 {
+  position: absolute;
+  top: -100px;
+  margin: 0 auto;
+  display: block;
+  z-index: 5;
+}
+.cube_3 {
+  position: absolute;
+  top: -100px;
+  margin-right: 0;
+  display: block;
+  z-index: 5;
+}
+.cube_top,
+.cube_top_2,
+.cube_top_3 {
+  position: absolute;
+  top: -12px;
+  left: 0px;
+  z-index: 5;
+}
+.cube_left,
+.cube_left_2,
+.cube_left_3 {
+  position: absolute;
+  top: 44px;
+  left: 0px;
+  z-index: 5;
+}
+.cube_right,
+.cube_right_2,
+.cube_right_3 {
+  position: absolute;
+  top: 44px;
+  left: 97px;
+  z-index: 5;
+}
+/* Light Path
+=========================================================== */
+.light_path_1 {
+  position: absolute;
+  background-color: #ffd972;
+  top: 0px;
+  left: 17%;
+  height: 350px;
+  width: 194px;
+  z-index: 2;
+}
+.light_path_2 {
+  position: absolute;
+  background-color: #ffd972;
+  top: 0;
+  height: 350px;
+  width: 194px;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.light_path_3 {
+  position: absolute;
+  background-color: #ffd972;
+  top: 0px;
+  right: 17%;
+  height: 350px;
+  width: 194px;
+  z-index: 2;
+}
+.angle_path {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.angle_path2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* Bottom Grey
+====================================================================== */
+.bottomGrey {
+  background-image: url(images/Background/wight_noise.jpg);
+  z-index: 1;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+.about_me {
+  position: relative;
+  top: 5px;
+  width: 590px;
+  margin: 0 auto;
+  padding: 20px;
+  z-index: 2;
+}
+.about_me section {
+  position: relative;
+  width: 575px;
+  margin: 0 auto;
+  padding: 8px 0 0 0;
+  z-index: 4;
+}
+.about_me section img {
+  position: relative;
+  height: 70px;
+  width: 570px;
+  z-index: 4;
+  margin: 10px 0 0 0;
+}
+.about_me section h1 {
+  color: #2D76A2;
+  text-align: center;
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  padding: 0 0 10px 0;
+  margin: 0 auto;
+}
+.about_me section p {
+  color: #666;
+  font-size: 13px;
+  font-family: Verdana, Geneva, sans-serif;
+  line-height: 21px;
+  margin: 15px 0 2px 0;
+  text-indent: 2em;
+  text-align: left;
+}
+.about_me section ul {
+  margin: 15px 0 2px 0;
+}
+.about_me section ul li {
+  color: #666;
+  font-size: 13px;
+  font-family: Verdana, Geneva, sans-serif;
+  line-height: 21px;
+  text-align: left;
+}
+.about_me hr {
+  padding: 0;
+  margin: 0;
+}
+.head_h1 {
+  position: absolute;
+  width: 570px;
+  text-align: center;
+  z-index: 5;
+  margin-top: -53px;
+}
+.colored {
+  color: #235C6D;
+  font-size: 17px;
+}
+.shadow {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  width: 460px;
+  box-shadow: 0px 0px 20px #546589;
+  z-index: 3;
+}
+/* Footer
+============================================================================== */
+.footer {
+  position: relative;
+  height: 410px;
+  background-color: #ffce48;
+  z-index: 8;
+}
+.icon_contact {
+  position: relative;
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+  width: 87px;
+  height: 101px;
+}
+.icon_contact1 {
+  position: relative;
+  margin: 0 auto;
+  width: 87px;
+  height: 101px;
+}
+.get_intouch {
+  position: relative;
+  margin-top: 10px;
+}
+.get_intouch h2 {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #666;
+  font-weight: 700;
+  padding: 0;
+  text-transform: uppercase;
+}
+.contacts {
+  position: relative;
+  margin-top: 30px;
+}
+.contacts p {
+  text-align: center;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 30px;
+  color: #FFF;
+}
+.copy {
+  position: relative;
+  margin-top: 70px;
+}
+.copy p {
+  text-align: center;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10px;
+  color: #FFF;
+}
+.tothe_top {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  cursor: hand;
+  background-color: rgba(112, 112, 112, 0.5);
+}
+.tothe_top p {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: white;
+  font-weight: 700;
+  margin: 10px;
+  text-transform: uppercase;
+}
+.tothe_top:hover {
+  background-color: rgba(145, 145, 145, 0.5);
+}
+/* View
+========================================================================= */
+.view {
+  position: relative;
+  height: 35px;
+  max-width: 875px;
+  margin: 0 auto;
+  padding: 0 0 30px 0;
+}
+.view ul li {
+  position: relative;
+  width: 225px;
+  height: 35px;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #666;
+  background-color: #ffce48;
+  float: left;
+  margin: 5px 25px 5px 0;
+}
+.view ul li:last-child {
+  width: 120px;
+  height: 35px;
+  cursor: pointer;
+  margin-right: 0;
+}
+.view ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 7px 0 ;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: normal;
+}
+.blue {
+  font-size: 15px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #FFF;
+}
+#what-media {
+  position: fixed;
+  top: 100px;
+  left: 30px;
+  z-index: 999;
+  color: black;
+}
+/* Web Design Page
+========================================================================= */
+.bottomGrey_web {
+  background-image: url(images/Background/wight_noise.jpg);
+  z-index: 1;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+.rhomb_web {
+  position: absolute;
+  top: -5px;
+  height: 190px;
+  width: 164px;
+  cursor: pointer;
+  cursor: hand;
+  z-index: 4;
+}
+.rhomb_web img {
+  height: 190px;
+  width: 164px;
+}
+.web {
+  position: relative;
+  width: 854px;
+  margin: 60px auto 30px;
+}
+.web h1 {
+  color: #666;
+  text-align: center;
+}
+.web p {
+  font-size: 10px;
+  color: #666;
+  padding: 0;
+  text-align: center;
+}
+.web_img {
+  width: 600px;
+  height: 375px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.web_button {
+  position: relative;
+  top: 5px;
+  width: 180px;
+  height: 30px;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #666;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: #ffce48;
+}
+.web_button p {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  font-style: italic;
+  padding: 5px;
+}
+/* Graphic
+=========================================================================
+========================================================================= */
+.graphic {
+  width: 854px;
+  margin: 60px auto;
+}
+.graphic h1 {
+  color: #666;
+  text-align: center;
+}
+.graphic p {
+  color: #888;
+  text-align: center;
+}
+.cube_graphic {
+  top: -100px;
+  width: 164px;
+  height: 190px;
+  margin: 0 auto;
+  display: block;
+  z-index: 5;
+}
+.poster {
+  padding: 30px 0;
+}
+.poster img {
+  float: left;
+  box-shadow: 2px 4px 7px #999;
+  width: 367px;
+  margin: 29px;
+}
+.last {
+  box-shadow: 2px 4px 7px #999;
+  height: 530px;
+  width: 367px;
+  margin: 30px;
+}
+.different img.long {
+  float: left;
+  box-shadow: 3px 4px 10px #999;
+  height: 302px;
+  max-width: 604px;
+  margin: 30px;
+}
+/* Oil Paintings Page
+======================================================== */
+.bottomGreyOil {
+  background-image: url(images/Background/wight_noise.jpg);
+  z-index: 1;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+.painting_box {
+  position: relative;
+  color: #666666;
+}
+.paintig_pic {
+  position: relative;
+  max-height: 550px;
+  max-width: 550px;
+  padding: 30px;
+  box-shadow: 0 1px 15px #999;
+  cursor: pointer;
+}
+.bottomGreyOil section:nth-child(odd) {
+  float: right;
+  clear: both;
+  margin: 0 50px 50px 0;
+}
+.bottomGreyOil section:nth-child(odd) img {
+  float: right;
+  margin: 0 0 0 30px;
+}
+.bottomGreyOil section:nth-child(odd) h1 {
+  color: #666;
+  margin: 10px 0 20px 0;
+  text-align: right;
+  float: left;
+}
+.bottomGreyOil section:nth-child(odd) ul {
+  color: #777;
+  text-align: right;
+  font-size: 11px;
+}
+.bottomGreyOil section:nth-child(even) {
+  float: left;
+  clear: both;
+  margin: 0 0 50px 50px;
+}
+.bottomGreyOil section:nth-child(even) img {
+  float: left;
+  margin: 0 30px 0 0;
+}
+.bottomGreyOil section:nth-child(even) h1 {
+  color: #666;
+  margin: 10px 0 20px 0;
+  text-align: left;
+  float: right;
+}
+.bottomGreyOil section:nth-child(even) ul {
+  color: #777;
+  text-align: left;
+  font-size: 11px;
+}
+/* Oil Paintings Page
+======================================================== */
+.bottomGreySandbox {
+  background-image: url(images/Background/wight_noise.jpg);
+  z-index: 1;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+.bottomGreySandbox > h2 {
+  color: #555;
+  margin: 60px 0 30px 0;
+  font-weight: bold;
+}
+#timer {
+  width: 400px;
+  margin: auto;
+}
+@media only screen and (min-width: 890px) and (max-width: 1189px) {
+  #what-media {
+    position: fixed;
+    top: 100px;
+    left: 30px;
+    z-index: 999;
+    color: brown;
+  }
+  /* Cubes
+======================================================== */
+  .bottomYellow {
+    height: 250px;
+  }
+  .rhomb img {
+    width: 140px;
+  }
+  .cube_1 {
+    top: -75px;
+  }
+  .cube_2 {
+    top: -75px;
+  }
+  .cube_3 {
+    top: -75px;
+  }
+  .cube_top img,
+  .cube_top_2 img,
+  .cube_top_3 img {
+    width: 144px;
+  }
+  .cube_left,
+  .cube_left_2,
+  .cube_left_3 {
+    top: 30px;
+  }
+  .cube_left img,
+  .cube_left_2 img,
+  .cube_left_3 img {
+    width: 72px;
+    height: 125px;
+  }
+  .cube_right,
+  .cube_right_2,
+  .cube_right_3 {
+    top: 30px;
+    left: 72px;
+  }
+  .cube_right img,
+  .cube_right_2 img,
+  .cube_right_3 img {
+    width: 72px;
+    height: 125px;
+  }
+  /* Light Path
+=========================================================== */
+  .light_path_1 {
+    left: 10%;
+    height: 250px;
+    width: 144px;
+  }
+  .light_path_2 {
+    height: 250px;
+    width: 144px;
+  }
+  .light_path_3 {
+    right: 10%;
+    height: 250px;
+    width: 144px;
+  }
+  .angle_path {
+    height: 42px;
+  }
+  .angle_path2 {
+    height: 42px;
+  }
+  .view {
+    max-width: 855px;
+  }
+  .view ul li {
+    margin: 5px 20px 5px 0;
+  }
+}
+@media only screen and (min-width: 590px) and (max-width: 889px) {
+  #what-media {
+    position: fixed;
+    top: 100px;
+    left: 30px;
+    z-index: 999;
+    color: green;
+  }
+  .bottomYellow {
+    height: 250px;
+  }
+  .rhomb img {
+    width: 140px;
+  }
+  .cube_1 {
+    top: -75px;
+  }
+  .cube_2 {
+    top: -75px;
+  }
+  .cube_3 {
+    top: -75px;
+  }
+  .cube_top img,
+  .cube_top_2 img,
+  .cube_top_3 img {
+    width: 144px;
+  }
+  .cube_left,
+  .cube_left_2,
+  .cube_left_3 {
+    top: 30px;
+  }
+  .cube_left img,
+  .cube_left_2 img,
+  .cube_left_3 img {
+    width: 72px;
+    height: 125px;
+  }
+  .cube_right,
+  .cube_right_2,
+  .cube_right_3 {
+    top: 30px;
+    left: 72px;
+  }
+  .cube_right img,
+  .cube_right_2 img,
+  .cube_right_3 img {
+    width: 72px;
+    height: 125px;
+  }
+  .light_path_1 {
+    left: 10%;
+    height: 250px;
+    width: 144px;
+  }
+  .light_path_2 {
+    height: 250px;
+    width: 144px;
+  }
+  .light_path_3 {
+    right: 10%;
+    height: 250px;
+    width: 144px;
+  }
+  .angle_path {
+    height: 42px;
+  }
+  .angle_path2 {
+    height: 42px;
+  }
+  .view {
+    max-width: 490px;
+  }
+  .view ul li {
+    margin: 5px 20px 5px 0;
+  }
+  .view ul li:nth-child(3) {
+    clear: left;
+  }
+  .about_me {
+    position: relative;
+    top: 5px;
+    width: 94%;
+    margin: 0 3%;
+    padding: 20px 0;
+  }
+  .about_me section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 8px 0 0 0;
+  }
+  .about_me section img {
+    width: 100%;
+  }
+  .head_h1 {
+    width: 100%;
+  }
+  .shadow {
+    width: 90%;
+  }
+  .web {
+    width: 94%;
+  }
+  .web_img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+  .graphic {
+    width: 94%;
+  }
+  .poster {
+    padding: 20px 0;
+  }
+  .poster img {
+    width: 44%;
+    margin: 3%;
+  }
+  .last {
+    width: 44%;
+    margin: 3%;
+  }
+  .painting_box {
+    width: 94%;
+    margin: 0 3% 50px;
+  }
+  .paintig_pic {
+    max-height: auto;
+    max-width: 90%;
+    padding: 5%;
+  }
+  .bottomGreyOil section:nth-child(odd) {
+    float: none;
+    margin: 0 3% 50px;
+  }
+  .bottomGreyOil section:nth-child(odd) img {
+    float: none;
+    margin: 0;
+  }
+  .bottomGreyOil section:nth-child(odd) h1 {
+    margin: 10px 0 10px 0;
+    text-align: center;
+    float: none;
+  }
+  .bottomGreyOil section:nth-child(odd) ul {
+    text-align: center;
+  }
+  .bottomGreyOil section:nth-child(even) {
+    float: none;
+    clear: both;
+    margin: 0 3% 50px;
+  }
+  .bottomGreyOil section:nth-child(even) img {
+    float: none;
+    margin: 0;
+  }
+  .bottomGreyOil section:nth-child(even) h1 {
+    margin: 10px 0 10px 0;
+    text-align: center;
+    float: none;
+  }
+  .bottomGreyOil section:nth-child(even) ul {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 490px) and (max-width: 589px) {
+  #what-media {
+    position: fixed;
+    top: 100px;
+    left: 30px;
+    z-index: 999;
+    color: red;
+  }
+  .view {
+    max-width: 225px;
+  }
+  .view ul li {
+    margin: 5px 20px 5px 0;
+    clear: both;
+  }
+  /* Cubes
+======================================================== */
+  .bottomYellow {
+    height: auto;
+  }
+  .rhomb img {
+    width: 140px;
+  }
+  .cube_1 {
+    top: -75px;
+  }
+  .cube_2 {
+    top: -75px;
+  }
+  .cube_3 {
+    top: -75px;
+  }
+  .cube_top img,
+  .cube_top_2 img,
+  .cube_top_3 img {
+    width: 144px;
+  }
+  .cube_left,
+  .cube_left_2,
+  .cube_left_3 {
+    top: 30px;
+  }
+  .cube_left img,
+  .cube_left_2 img,
+  .cube_left_3 img {
+    width: 72px;
+    height: 125px;
+  }
+  .cube_right,
+  .cube_right_2,
+  .cube_right_3 {
+    top: 30px;
+    left: 72px;
+  }
+  .cube_right img,
+  .cube_right_2 img,
+  .cube_right_3 img {
+    width: 72px;
+    height: 125px;
+  }
+  /* Light Path
+=========================================================== */
+  .light_path_1 {
+    position: relative;
+    margin: 0 auto;
+    height: 250px;
+    width: 144px;
+    left: auto;
+  }
+  .light_path_2 {
+    position: relative;
+    margin: 0 auto;
+    height: 250px;
+    width: 144px;
+  }
+  .light_path_3 {
+    position: relative;
+    margin: 0 auto;
+    height: 250px;
+    width: 144px;
+    right: auto;
+  }
+  .angle_path {
+    height: 42px;
+  }
+  .angle_path2 {
+    height: 42px;
+  }
+  .about_me {
+    position: relative;
+    top: 5px;
+    width: 94%;
+    margin: 0 3%;
+    padding: 20px 0;
+  }
+  .about_me section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 8px 0 0 0;
+  }
+  .about_me section img {
+    width: 100%;
+  }
+  .head_h1 {
+    width: 100%;
+  }
+  .shadow {
+    width: 90%;
+  }
+  .web {
+    width: 94%;
+  }
+  .web h1 {
+    font-size: 20px;
+  }
+  .web_img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+  .graphic {
+    width: 94%;
+  }
+  .poster {
+    padding: 20px 0;
+  }
+  .poster img {
+    width: 98%;
+    margin: 1%;
+  }
+  .last {
+    width: 98%;
+    margin: 1%;
+  }
+  .painting_box {
+    width: 94%;
+    margin: 0 3% 50px;
+  }
+  .paintig_pic {
+    max-height: auto;
+    max-width: 90%;
+    padding: 5%;
+  }
+  .bottomGreyOil section:nth-child(odd) {
+    float: none;
+    margin: 0 3% 50px;
+  }
+  .bottomGreyOil section:nth-child(odd) img {
+    float: none;
+    margin: 0;
+  }
+  .bottomGreyOil section:nth-child(odd) h1 {
+    margin: 10px 0 10px 0;
+    text-align: center;
+    float: none;
+  }
+  .bottomGreyOil section:nth-child(odd) ul {
+    text-align: center;
+  }
+  .bottomGreyOil section:nth-child(even) {
+    float: none;
+    clear: both;
+    margin: 0 3% 50px;
+  }
+  .bottomGreyOil section:nth-child(even) img {
+    float: none;
+    margin: 0;
+  }
+  .bottomGreyOil section:nth-child(even) h1 {
+    margin: 10px 0 10px 0;
+    text-align: center;
+    float: none;
+  }
+  .bottomGreyOil section:nth-child(even) ul {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 489px) {
+  #what-media {
+    position: fixed;
+    top: 100px;
+    left: 30px;
+    z-index: 999;
+    color: purple;
+  }
+  .center {
+    height: 300px;
+  }
+  .main_message {
+    width: 94%;
+    margin: 50px 3% 25px 3%;
+  }
+  .main_message h1 {
+    font-size: 22px;
+  }
+  .main_message p {
+    font-size: 22px;
+    margin: 5px 0 0 0;
+  }
+  .view {
+    max-width: 225px;
+  }
+  .view ul li {
+    margin: 5px 20px 5px 0;
+    clear: both;
+  }
+  /* Cubes
+======================================================== */
+  .bottomYellow {
+    height: auto;
+  }
+  .rhomb img {
+    width: 140px;
+  }
+  .cube_1 {
+    top: -75px;
+  }
+  .cube_2 {
+    top: -75px;
+  }
+  .cube_3 {
+    top: -75px;
+  }
+  .cube_top img,
+  .cube_top_2 img,
+  .cube_top_3 img {
+    width: 144px;
+  }
+  .cube_left,
+  .cube_left_2,
+  .cube_left_3 {
+    top: 30px;
+  }
+  .cube_left img,
+  .cube_left_2 img,
+  .cube_left_3 img {
+    width: 72px;
+    height: 125px;
+  }
+  .cube_right,
+  .cube_right_2,
+  .cube_right_3 {
+    top: 30px;
+    left: 72px;
+  }
+  .cube_right img,
+  .cube_right_2 img,
+  .cube_right_3 img {
+    width: 72px;
+    height: 125px;
+  }
+  /* Light Path
+=========================================================== */
+  .light_path_1 {
+    position: relative;
+    margin: 0 auto;
+    height: 250px;
+    width: 144px;
+    left: auto;
+  }
+  .light_path_2 {
+    position: relative;
+    margin: 0 auto;
+    height: 250px;
+    width: 144px;
+  }
+  .light_path_3 {
+    position: relative;
+    margin: 0 auto;
+    height: 250px;
+    width: 144px;
+    right: auto;
+  }
+  .angle_path {
+    height: 42px;
+  }
+  .angle_path2 {
+    height: 42px;
+  }
+  .about_me {
+    position: relative;
+    top: 5px;
+    width: 94%;
+    margin: 0 3%;
+    padding: 20px 0;
+  }
+  .about_me section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 8px 0 0 0;
+  }
+  .about_me section img {
+    width: 100%;
+  }
+  .head_h1 {
+    width: 100%;
+  }
+  .shadow {
+    width: 90%;
+  }
+  .web {
+    width: 94%;
+  }
+  .web h1 {
+    font-size: 20px;
+  }
+  .web_img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+  .graphic {
+    width: 94%;
+  }
+  .poster {
+    padding: 20px 0;
+  }
+  .poster img {
+    width: 98%;
+    margin: 15px 1% 15px 1%;
+  }
+  .last {
+    width: 98%;
+    margin: 1%;
+  }
+  .painting_box {
+    width: 94%;
+    margin: 0 3% 50px;
+  }
+  .paintig_pic {
+    max-height: auto;
+    max-width: 90%;
+    padding: 5%;
+  }
+  .bottomGreyOil section:nth-child(odd) {
+    float: none;
+    margin: 0 3% 50px;
+  }
+  .bottomGreyOil section:nth-child(odd) img {
+    float: none;
+    margin: 0;
+  }
+  .bottomGreyOil section:nth-child(odd) h1 {
+    margin: 10px 0 10px 0;
+    text-align: center;
+    float: none;
+  }
+  .bottomGreyOil section:nth-child(odd) ul {
+    text-align: center;
+  }
+  .bottomGreyOil section:nth-child(even) {
+    float: none;
+    clear: both;
+    margin: 0 3% 50px;
+  }
+  .bottomGreyOil section:nth-child(even) img {
+    float: none;
+    margin: 0;
+  }
+  .bottomGreyOil section:nth-child(even) h1 {
+    margin: 10px 0 10px 0;
+    text-align: center;
+    float: none;
+  }
+  .bottomGreyOil section:nth-child(even) ul {
+    text-align: center;
+  }
+}

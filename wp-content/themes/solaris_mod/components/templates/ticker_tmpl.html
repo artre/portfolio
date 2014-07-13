@@ -1,0 +1,50 @@
+<div class="ticker-header clearfix">
+    <div class="ticker-cooldown">
+        <span>{{cooldown}}</span>
+    </div>
+    <div class="ticker-exchangename">
+        <span><b>{{exchangeName}}</b></span>
+    </div> <!-- end .ticker-exchangename -->
+    <div class="ticker-lastPrice">
+        <span class="flash-me" animate-on-change="lastPrice">{{lastPrice | currency: currSym}}</span>
+    </div> <!-- end .ticker-lastPrice -->
+    <div class="ticker-lastPerc">
+        <span class="ticker-arrows">
+            <span ng-show="isPos(lastPerc)" class="arrow-up"></span>
+            <span ng-show="isNeg(lastPerc)" class="arrow-down"></span>
+        </span>
+        <span class="ticker-percent flash-me" ng-class="isPos(change) ? 'c-green' : 'c-red'" animate-on-change="lastPerc">{{lastPerc}}%</span>
+    </div> <!-- end .ticker-lastPerc -->
+</div> <!-- end .ticker-header -->
+
+<div class="ticker-body clearfix">
+    <div>
+        <ul>
+            <li>
+                <span>Last:</span>
+                <span class="flash-me" animate-on-change="lastPrice">{{lastPrice | currency: currSym}}</span>
+            </li>
+            <li>
+                <span>Vol:</span>
+                <span class="flash-me" animate-on-change="volume">{{volume}}</span>
+            </li>
+            <li><span>Change:</span> <span class="flash-me" ng-class="isPos(change) ? 'c-green' : 'c-red'" animate-on-change="change">{{change | currency: currSym}}</span></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <span>High:</span>
+                <span class="flash-me" animate-on-change="highPrice">{{highPrice | currency: currSym}}</span>
+            </li>
+            <li>
+                <span>Low:</span>
+                <span class="flash-me" animate-on-change="lowPrice">{{lowPrice  | currency: currSym}}</span>
+            </li>
+            <li>
+                <span>Ask:</span>
+                <span class="flash-me" animate-on-change="askPrice">{{askPrice  | currency: currSym}}</span>
+            </li>
+        </ul>
+    </div>
+</div>
