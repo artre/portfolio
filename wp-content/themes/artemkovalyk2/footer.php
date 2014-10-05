@@ -34,7 +34,7 @@
 <script type='text/javascript' src='<?php bloginfo('template_url'); ?>/js/cube.js'></script>
 <script type='text/javascript' src='<?php bloginfo('template_url'); ?>/js/animate_paintings.js'></script>
 <script type='text/javascript' src='<?php bloginfo('template_url'); ?>/js/json.js'></script>
-<script type='text/javascript' src='<?php bloginfo('template_url'); ?>/js/ajax_object.js'></script>
+<script type='text/javascript' src='<?php bloginfo('template_url'); ?>/js/ArtemObject.js'></script>
 <script type='text/javascript' src='<?php bloginfo('template_url'); ?>/js/sandbox.js'></script>
 
 </body>

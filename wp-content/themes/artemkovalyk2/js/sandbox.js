@@ -338,7 +338,7 @@ window.onload = function() {
 
     link.onclick = function() {
 
-        Tutsplus.ajax('files/ajax.json', {
+        Tutsplus.ajax((template_directory + '/files/ajax.json'), {
             method: "GET",
             complete: function(response) {
 
@@ -372,6 +372,32 @@ window.onload = function() {
         });
 
         return false; //return false is disable a default behavior of <a> tag so it will not send us to some link
+    };
+
+    var form = document.getElementById('form-ajax');
+
+    form.onsubmit = function() {
+        var emailVal = document.getElementById("email-ajax").value;
+        var url = form.getAttribute("action");
+
+        Tutsplus.ajax(url, {
+            method: "POST",
+            data: {
+                email: emailVal
+            },
+            complete: function(response) {
+                var workingContainer = document.getElementsByClassName("bottomGreySandbox")[0];
+                var divAjax = document.createElement("div");
+                divAjax.setAttribute("id", "div1");
+                workingContainer.appendChild(divAjax);
+
+                var divNext = document.getElementById("div1");
+                divNext.innerHTML = response;
+
+            }
+        });
+
+        return false;
     };
 
 

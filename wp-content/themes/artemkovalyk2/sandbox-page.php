@@ -23,6 +23,13 @@ Template name: Sandbox
 	</div>
 </div>
 <div class="bottomGreySandbox">
+    <h2>Ajax Post Request</h2>
+    <form method="POST" action="<?php bloginfo('template_url'); ?>/files/ajax.php" id="form-ajax">
+        <p>
+            Email: <input type="text" name="email" id="email-ajax">
+        </p>
+        <input type="submit" value="Validate">
+    </form>
     <h2>Ajax Library</h2>
     <div id="ajaxlib">
         <a id="ajax-lib-link" href="files/ajax.json">Load Ajax JSON file</a>

@@ -893,7 +893,7 @@ object:active {
   font-weight: bold;
 }
 #timer {
-  width: 400px;
+  width: 420px;
   margin: auto;
 }
 @media only screen and (min-width: 890px) and (max-width: 1189px) {

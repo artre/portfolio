@@ -212,6 +212,7 @@
 		$args = array(
 			'labels'        => $labels,
 			'description'   => 'Holds POST for Longform Articles',
+			'taxonomies' 	=> array('category'), 
 			'public'        => true,
 			'menu_position' => 4,
 			'supports'      => array( 'title', 'comments', 'thumbnail', 'custom-fields' ),
