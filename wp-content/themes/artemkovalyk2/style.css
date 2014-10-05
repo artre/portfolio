@@ -561,6 +561,9 @@ object:active {
   padding: 0;
   margin: 0;
 }
+.about-head {
+  margin-bottom: 20px;
+}
 .head_h1 {
   position: absolute;
   width: 570px;
@@ -830,7 +833,7 @@ object:active {
   position: relative;
   color: #666666;
 }
-.paintig_pic {
+.painting_pic {
   position: relative;
   max-height: 550px;
   max-width: 550px;

@@ -9,10 +9,10 @@
 ?>
 	<div class="view">
 		<ul>
-			<li><a href="<?php echo site_url();?>/web_design/">view my - <span class="blue">web design</span></a></li>
-			<li><a href="<?php echo site_url();?>/graphic_design/">view my - <span class="blue">graphic design</span></a></li>
-			<li><a href="<?php echo site_url();?>/oil_painting/">view my - <span class="blue">oil painting</span></a></li>
-			<li><a href="<?php echo site_url();?>/sandbox/"><span class="blue">sandbox</span></a></li>
+			<li><a href="<?php echo site_url();?>/web-design/">view my - <span class="blue">web design</span></a></li>
+			<li><a href="<?php echo site_url();?>/graphic-design/">view my - <span class="blue">graphic design</span></a></li>
+			<li><a href="<?php echo site_url();?>/oil-painting/">view my - <span class="blue">oil painting</span></a></li>
+			<!-- <li><a href="<?php echo site_url();?>/sandbox/"><span class="blue">sandbox</span></a></li> -->
 			<li class="see-top"><a>to the top</a></li>
 		</ul>
 	</div>  <!-- END of .view --> 
@@ -33,9 +33,14 @@
 <script type='text/javascript' src='<?php bloginfo('template_url'); ?>/js/jquery-1.11.1.min.js'></script>
 <script type='text/javascript' src='<?php bloginfo('template_url'); ?>/js/cube.js'></script>
 <script type='text/javascript' src='<?php bloginfo('template_url'); ?>/js/animate_paintings.js'></script>
-<script type='text/javascript' src='<?php bloginfo('template_url'); ?>/js/json.js'></script>
-<script type='text/javascript' src='<?php bloginfo('template_url'); ?>/js/ArtemObject.js'></script>
-<script type='text/javascript' src='<?php bloginfo('template_url'); ?>/js/sandbox.js'></script>
+
+
+<?php if ( is_page_template( "sandbox-page.php" ) ) : ?>
+	<script type='text/javascript' src='<?php bloginfo('template_url'); ?>/js/json.js'></script>
+	<script type='text/javascript' src='<?php bloginfo('template_url'); ?>/js/ArtemObject.js'></script>
+	<script type='text/javascript' src='<?php bloginfo('template_url'); ?>/js/sandbox.js'></script>
+<?php endif; ?>
+
 
 </body>
 </html>
